@@ -13,5 +13,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-item><ion-input type="text" [(ngModel)]="post.name"> </ion-input></ion-item>
+  <ion-item><ion-input type="text" [(ngModel)]="post.job"> </ion-input></ion-item>
+  <!-- <ion-item><ion-input type="text" [(ngModel)]="post.last_name"> </ion-input></ion-item> -->
+  <!-- <ion-item><ion-input type="date" [(ngModel)]="post.createdAt"> </ion-input></ion-item> -->
+  <!-- <ion-button (click)="submit()">SIMPAN DATA</ion-button> -->
+
+  <ion-button (click)="add()">Add</ion-button>
+  <ion-button (click)="edit()">Edit</ion-button>
+  <ion-button (click)="presentConfirm()">Delete</ion-button>
+
+  <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
 </ion-content>
